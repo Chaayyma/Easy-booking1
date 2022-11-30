@@ -1,0 +1,8 @@
+/admin/node_modules
+/admin/package-lock.json
+
+/client/node_modules
+/client/package-lock.json
+
+/api/node_modules
+/api/package-lock.json
