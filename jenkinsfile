@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-               bat "rmdir  /s /q booking"
+              // bat "rmdir  /s /q booking"
                 bat "git clone https://github.com/Chaayyma/Easy-booking1.git"
                 bat "mvn clean -f booking"
             }
