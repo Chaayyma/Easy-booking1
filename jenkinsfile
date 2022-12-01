@@ -6,21 +6,25 @@ pipeline {
               // bat "rmdir  /s /q booking"
                 bat "git clone https://github.com/Chaayyma/Easy-booking1.git"
                 bat "mvn clean -f booking"
+                 sleep(3)
             }
         }
         stage('install') {
             steps {
                 bat "mvn install -f booking"
+                 sleep(3)
             }
         }
         stage('test') {
             steps {
                 bat "mvn test -f booking"
+                 sleep(3)
             }
         }
         stage('package') {
             steps {
                 bat "mvn package -f booking"
+                 sleep(3)
             }
         }
     }
